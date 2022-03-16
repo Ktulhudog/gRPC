@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package proto.src.sender;
+
+option go_package = "./;sender";
+
+service Sender {
+  rpc Send(SendRequest) returns (SendResponse){
+  }
+}
+
+message SendRequest{
+  string url = 1;
+  string method = 2;
+  repeated Header headers = 3;
+  optional string body = 4;
+}
+message SendResponse{
+  optional string body = 1;
+}
+
+message Header{
+  string value = 1;
+}
