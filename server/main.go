@@ -1,8 +1,9 @@
 package main
 
 import (
-	senderPb "gRPC/pkg/gogenproto"
-	serverSender "gRPC/pkg/senderSrv"
+	senderPb "gRPC/server/pkg/gogenproto"
+	serverSender "gRPC/server/pkg/senderSrv"
+
 	"google.golang.org/grpc"
 	"log"
 	"net"

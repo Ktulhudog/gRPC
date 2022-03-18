@@ -1,8 +1,8 @@
-package serverSender
+package senderSrv
 
 import (
 	"context"
-	"gRPC/pkg/gogenproto"
+	sender "gRPC/server/pkg/gogenproto"
 	"github.com/valyala/fasthttp"
 	"log"
 )
